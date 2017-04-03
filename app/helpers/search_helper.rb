@@ -8,6 +8,7 @@ module SearchHelper
   end
 
   def external_search_tooltip_text
+    
     text = 'Checking this box allows external resources to be includes in the search. '
     text << 'External resources include:  '
     text << search_adaptor_names.collect { |name| "#{name}" }.join(', ')
